@@ -1,0 +1,16 @@
+server:
+  port: 11111
+spring:
+  application:
+    name: ZUUL-SERVER
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka
+zuul:
+  prefix: /api #添加路由的前缀
+  routes:
+    consumer-feign: /api-a/**
+    consumer-hystrix: /api-b/**
+
+

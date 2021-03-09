@@ -1,0 +1,4 @@
+2.Zuul项目运行
+      1.运行泛test-eurekas1
+      2.运行EurekaClient01/EurekaClient02
+      2.运行网关Zuul
